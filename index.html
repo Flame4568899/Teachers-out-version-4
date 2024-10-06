@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Voting System</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        select, button {
+            background-color: #333333;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #555555;
+        }
+        #votedList {
+            margin-top: 20px;
+        }
+        li {
+            list-style-type: none;
+            padding: 5px;
+            background-color: #444444;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vote for Your Teacher</h1>
+    <form id="voteForm">
+        <select id="teacherSelect">
+            <!-- Options will be populated dynamically -->
+        </select>
+        <button type="submit">Vote</button>
+    </form>
+
+    <h2>Voted Teachers</h2>
+    <ul id="votedList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
